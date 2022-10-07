@@ -7,9 +7,19 @@ import java.util.StringTokenizer;
 
 class main {
     public static void main(String[] args) {
+          Lista_Categorias lista_categorias= new Lista_Categorias();
+        lista_categorias=lista_categorias.obtenerdatos();
+        lista_categorias.imprimir();
         Lista_Articulos lista_articulos= new Lista_Articulos();
-        lista_articulos=lista_articulos.obtenerdatos();
+        lista_articulos=lista_articulos.obtenerdatos(lista_categorias);
         lista_articulos.imprimir();
+        Lista_Ventas lista_de_ventas=new Lista_Ventas();
+        lista_de_ventas=lista_de_ventas.obtenerdatos(lista_articulos);
+        lista_de_ventas.imprimir();
+
+
+
+
 
        /*List<articulos> lista_de_articulos=new ArrayList<>();
        String path="D:\\Practica granero\\articulos.txt";

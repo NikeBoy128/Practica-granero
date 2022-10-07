@@ -1,7 +1,7 @@
 class articulos {
     private String id_articulo;
     private String articulo;
-    private String categoria;
+    private Categorias categoria;
     private String cantidad;
     private String valor_compra;
     public String getId_articulo() {
@@ -16,10 +16,10 @@ class articulos {
     public void setArticulo(String articulo) {
         this.articulo = articulo;
     }
-    public String getCategoria() {
+    public Categorias getCategoria() {
         return categoria;
     }
-    public void setCategoria(String categoria) {
+    public void setCategoria(Categorias categoria) {
         this.categoria = categoria;
     }
     public String getCantidad() {
@@ -36,7 +36,7 @@ class articulos {
     }
     public articulos() {
     }
-    public articulos(String id_articulo, String articulo, String categoria, String cantidad, String valor_compra) {
+    public articulos(String id_articulo, String articulo, Categorias categoria, String cantidad, String valor_compra) {
         this.id_articulo = id_articulo;
         this.articulo = articulo;
         this.categoria = categoria;

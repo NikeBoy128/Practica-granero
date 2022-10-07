@@ -1,0 +1,3 @@
+A;Alimentos;10
+B;Aseo;15
+C;Bebidas;12

@@ -1,5 +1,7 @@
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.StringTokenizer;
@@ -31,7 +33,7 @@ class Lista_Ventas {
                 while(atributo.hasMoreElements()){
                     venta.setId_venta(atributo.nextElement().toString());
                     venta.setId_articulo(listaart.buscar(atributo.nextElement().toString()));
-                    venta.setCantidad(atributo.nextElement().toString());
+                    venta.setCantidad(Integer.parseInt(atributo.nextElement().toString()));
 
 
 
@@ -63,6 +65,31 @@ class Lista_Ventas {
     }
     public void mirar(Lista_Articulos lista){
         lista.imprimir();
+
+
+    }
+    public void reporarventas(){
+        String path="D:\\Practica granero\\carrito3.txt";
+        File file =new File(path);
+        String reportetex="";
+        for(Ventas aux:lisa_ventas){
+            int totalart=0;
+            totalart+=aux.getCantidad()*aux.getId_articulo().getValor_compra();
+           reportetex+=aux.getId_venta()+"\t"+aux.getId_articulo().getArticulo()+"\t"+aux.getCantidad()*aux.getId_articulo().getValor_compra()+"\t"+totalart+"\n";
+        }
+        try{
+            file.createNewFile();
+            FileWriter fw= new FileWriter(file);
+            BufferedWriter bw= new BufferedWriter(fw);
+            bw.write(reportetex);
+            bw.close();
+
+
+        }catch (Exception e){
+            e.printStackTrace();
+
+        }
+
 
 
     }

@@ -1,12 +1,12 @@
 public class Ventas {
     private String id_venta;
     private articulos id_articulo;
-    private String cantidad;
+    private int cantidad;
 
     public Ventas() {
     }
 
-    public Ventas(String id_venta, articulos id_articulo, String cantidad) {
+    public Ventas(String id_venta, articulos id_articulo, int cantidad) {
         this.id_venta = id_venta;
         this.id_articulo = id_articulo;
         this.cantidad = cantidad;
@@ -28,11 +28,11 @@ public class Ventas {
         this.id_articulo = id_articulo;
     }
 
-    public String getCantidad() {
+    public int getCantidad() {
         return cantidad;
     }
 
-    public void setCantidad(String cantidad) {
+    public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
 }

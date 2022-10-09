@@ -16,6 +16,9 @@ class main {
         Lista_Ventas lista_de_ventas=new Lista_Ventas();
         lista_de_ventas=lista_de_ventas.obtenerdatos(lista_articulos);
         lista_de_ventas.imprimir();
+        lista_de_ventas.reporarventas();
+        Guardar_ventas gv= new Guardar_ventas();
+        gv.guardar(lista_de_ventas);
 
 
 

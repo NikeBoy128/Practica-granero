@@ -1,0 +1,14 @@
+A	 articulo arroz	 sub total 9200	 cantidad 4	2300
+A	 articulo frijol	 sub total 11100	 cantidad 3	3700
+A	 articulo avena	 sub total 5600	 cantidad 2	2800
+A	 articulo panela	 sub total 4500	 cantidad 3	1500
+A	 articulo jabon	 sub total 1600	 cantidad 2	800
+B	 articulo arroz	 sub total 11500	 cantidad 5	2300
+B	 articulo jabon	 sub total 3200	 cantidad 4	800
+C	 articulo trigo	 sub total 5400	 cantidad 3	1800
+C	 articulo panela	 sub total 3000	 cantidad 2	1500
+C	 articulo limpido	 sub total 4800	 cantidad 4	1200
+D	 articulo café	 sub total 10000	 cantidad 4	2500
+D	 articulo jabon	 sub total 2400	 cantidad 3	800
+B	 articulo frijol	 sub total 18500	 cantidad 5	3700
+el total del carrito es 90800

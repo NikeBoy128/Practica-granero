@@ -36,7 +36,7 @@ class Lista_Articulos {
                      articulo.setArticulo(atributo.nextElement().toString());
                      articulo.setCategoria(listacat.buscar2(atributo.nextElement().toString()));
                      articulo.setCantidad((atributo.nextElement().toString()));
-                     articulo.setValor_compra((atributo.nextElement().toString()));
+                     articulo.setValor_compra(Integer.parseInt(atributo.nextElement().toString()));
 
 
                  }
@@ -70,7 +70,7 @@ class Lista_Articulos {
         articuloprueba.setId_articulo("00");
         articuloprueba.setArticulo("articulo vacio");
         articuloprueba.setCantidad("0");
-        articuloprueba.setValor_compra("0");
+        articuloprueba.setValor_compra(0);
         for(articulos aux:articulos){
             if(articu.compareTo(aux.getId_articulo())==0){
                 return aux;
